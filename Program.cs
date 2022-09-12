@@ -3,6 +3,7 @@
 //================================================
 
 bool isRunning = true;
+int nrBeställningar = 0;
 
 while (isRunning)
 {
@@ -25,9 +26,11 @@ void ReadInput()
     {
         case 1:
             Console.WriteLine("Skönt. Då slipper vi ringa och klaga på att varorna inte levereras i tid.");
+            nrBeställningar++;
             break;
         case 2:
             Console.WriteLine("Hellre mer i lager än för lite...");
+            nrBeställningar++;
             break;
         case 3:
             Console.WriteLine("Vad väntar du på? Börja inventera hyllorna!");
